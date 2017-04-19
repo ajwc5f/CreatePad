@@ -1,0 +1,247 @@
+@font-face {
+	font-family: pacifico;
+	src: url(fonts/Pacifico.ttf);
+}
+
+@font-face {
+	font-family: ostrich;
+	src: url(fonts/ostrich-regular.ttf);
+}
+
+@font-face {
+	font-family: ostrichbold;
+	src: url(fonts/ostrich-bold.ttf);
+}
+
+html {                
+	background: url(images/background.jpg);
+    max-height: 1000px;
+	font-family: ostrich;
+}
+            
+body {
+	margin: 0px;
+	height: 100%;
+}
+            
+#header {
+	height: 60px;
+	background: url(images/background.jpg);
+	color: white;
+	width: 66%;
+	min-width: 690px;
+	margin: 0px auto;
+	text-align: right;
+	line-height: 60px;
+	font-family: pacifico;
+}
+            
+.headerTitle {
+	float: left;
+	margin: 0px;
+	cursor: pointer;
+}
+
+#padContainer {
+	height: 480px;
+	margin: 0px auto;
+	background: url(images/optica_pattern.png);
+	background-size: cover;
+	background-position: center;
+	padding: 10px;
+	text-align: center;
+	box-shadow: inset  0  18px 35px -8px #000000, 
+				inset  0 -18px 35px -8px #000000;
+	position: relative;
+}
+
+#pads {
+	width: 400px;
+	height: 400px;
+	margin: 40px auto;
+	border: 1px rgb(19, 19, 19) solid;
+	border-radius: 15px;
+	background: #555555;
+	-moz-box-shadow: inset 0px 0px 34px 1px rgb(0, 0, 0);
+    -webkit-box-shadow: inset 0px 0px 34px 1px rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px 1px rgb(0, 0, 0),
+						0px 0px 100px 1px #FFFFFF;
+	position: relative;
+}
+
+.pad {
+	display: block;
+	margin: 12.5px 12.5px;
+	width: 75px;
+	height: 75px;
+	background: linear-gradient(to bottom, #949494, #c7c7c7);
+	border: solid #000000 2px;
+	border-radius: 10px;
+	font-size: 15pt;
+	color: white;
+	float: left; 
+	outline: 0;
+	font-family: ostrichbold;
+}
+
+.padPress {
+	background: linear-gradient(to bottom, #FF5454, #FFBDBD);
+	border: 2px solid white;
+}
+
+.padhover {
+	background: linear-gradient(to bottom, #FFFB91, #FFFFFF);
+	border: 2px solid white;
+}
+            
+#soundBank {
+	text-align: center;
+	margin: 30px auto 30px;
+	width: 60%;	
+	min-height: auto;
+	min-width: 553px;
+	box-shadow: 0px 0px 60px 1px rgb(0, 0, 0);
+	background: white;
+	position: relative;
+	border: 1px solid #AAA;
+	border-radius: 5px;
+}
+.sound {
+    background: lightgray;
+    color: #333;
+    cursor: pointer;	
+    overflow: visible;		
+} 
+
+.snare, .hat, .kick, .perc, .synth, .loop {
+    width: 125px; 
+    height: 20px;
+    line-height: 20px;
+    font size: 16px;
+    padding: 10px 0px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+ul#navigation {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    background: url(images/tabHeader.jpg);
+    margin: 0px;
+}
+
+ul#navigation > li {
+	display: inline-block;
+    padding: 10px 20px;
+    margin: 6px 0px 0px 2px;
+    border: 1px solid #AAA;
+    border-bottom: none;
+    border-top: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;			
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+			.tab {
+				background: blue;
+			}
+
+			.activeTab {
+				background: linear-gradient(to bottom, #7a7a7a, #c7c7c7);
+			}
+
+			.hoverTab {
+				background: linear-gradient(to bottom, #BABABA, #e0e0e0);
+			}
+
+            #content {
+                padding: 10px 35px;
+                position: relative;
+				min-height: auto;
+                max-height: auto;
+				/*overflow: auto;*/
+                text-align: center;
+				background-color: white;
+            }
+
+			#loginWidget {
+				width: 500px;
+				float: right;
+			}
+
+			.loginText {
+				font-size: 18px;
+				font-family: ostrich;
+			}
+			
+			.ui-widget input {
+				width: 100px;
+				background-color: #c2c2c2;
+			}
+
+			#username, #password {
+				margin: 0px 5px;
+				font-size: 16px;
+			}
+			.ui-state-error {
+				font-family: ostrich;
+				float: left;
+			}
+
+			#loginsubmit {
+				width: 75px;
+				font-size: 18px;
+				border-radius: 5px;
+				background: white;
+				font-family: ostrich;
+			}
+
+			#logoutWidget {
+				width: 100px;
+				float: right;
+			}
+
+			#logout {
+				width: 75px;
+				font-size: 18px;
+				border-radius: 5px;
+				background: white;
+				font-family: ostrich;
+			}
+			.inputfield {
+				background-color: #8c8c8c;
+				border-radius: 5px;
+				font-family: ostrich;
+			}
+			#selectmenu {
+				border: none;
+				text-align: center;
+				float: right;
+				margin-right: 20px;
+				padding: 0px;
+			}
+
+			#bgpicker {
+				width: 150px;
+				padding: 0px;
+			}
+
+			footer {
+				text-align: center;
+				color: white;
+				font-size: 14px;
+			}
+			.ui-state-default {
+				font-family: ostrich;
+				display: inline-block;
+				color: black;
+				margin-top: 10px;
+			}
+
+			label {
+				font-family: ostrich;
+			}
